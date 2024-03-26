@@ -24,6 +24,7 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), LogInActivity.class);
+                finish();
                 startActivity(intent);
             }
         });
@@ -32,6 +33,7 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), LogInActivity.class);
+                finish();
                 startActivity(intent);
             }
         });

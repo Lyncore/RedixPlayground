@@ -24,7 +24,8 @@ public class LogInActivity extends AppCompatActivity {
         button_logIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                Intent intent = new Intent(LogInActivity.this, ProfileActivity.class);
+                finish();
                 startActivity(intent);
             }
         });
@@ -33,6 +34,7 @@ public class LogInActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
+                finish();
                 startActivity(intent);
             }
         });
@@ -41,6 +43,7 @@ public class LogInActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ForgotRasswordActivity.class);
+                finish();
                 startActivity(intent);
             }
         });

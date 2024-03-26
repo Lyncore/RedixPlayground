@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="115px">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/img_profile" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Ken"
+            android:textSize="16dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color_light"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current balance:"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/text_color_light"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/eyelish"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="140dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable dark Mode"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/text_color_light"
+            android:textStyle="bold"/>
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/swith_to_dark"
+            android:layout_width="43.06dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="160dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="322dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/edit_profile_button" />
+    <ImageView
+        android:layout_width="322dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/statements_report"/>
+    <ImageView
+        android:layout_width="322dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/notifications_settings_button"/>
+    <ImageView
+        android:id="@+id/card"
+        android:layout_width="322dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/card_button" />
+    <ImageView
+        android:layout_width="322dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/referrals_button"/>
+
+    <ImageView
+        android:layout_width="322dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/about_us_button" />
+
+    <ImageView
+        android:layout_width="322dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/log_out_button"/>
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
