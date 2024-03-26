@@ -7,13 +7,19 @@
     tools:context=".AddPayementActivity">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
         <ImageView
+            android:id="@+id/button_back"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/button_back"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="24dp"/>
+            android:layout_marginStart="18dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -22,7 +28,87 @@
             android:textSize="16dp"
             android:textColor="@color/dark_grey"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="60dp"/>
+            android:layout_marginStart="70dp"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="18dp">
+        <CheckBox
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@drawable/checkbox_circle"
+            android:layout_gravity="center_vertical"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay with wallet"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/text_color_light"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="complete the payment using your e wallet"
+                android:textColor="@color/dark_grey"
+                android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="18dp">
+            <CheckBox
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/checkbox_circle"
+                android:layout_gravity="center_vertical"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credit / debit card"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="16dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="complete the payment using your debit card"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_create_signUp"
+            android:layout_width="323dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/button_primary"
+            android:fontFamily="sans-serif"
+            android:text="Proceed to pay"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="115px">
+        android:layout_marginTop="50px">
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginTop="25dp">
+        android:layout_marginTop="15dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -118,5 +118,37 @@
         android:layout_marginEnd="20dp"
         android:layout_marginTop="5dp"
         android:src="@drawable/log_out_button"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:elevation="10dp">
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/button_home"
+            android:layout_marginStart="25dp"/>
+        <ImageView
+            android:id="@+id/button_wallet"
+            android:layout_width="33dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/button_wallet"
+            android:layout_marginStart="60dp"/>
+        <ImageView
+            android:id="@+id/button_track"
+            android:layout_width="33dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/button_track"
+            android:layout_marginStart="60dp"/>
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/button_profile_checked"
+            android:layout_marginStart="60dp"/>
+    </LinearLayout>
 </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrackActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="341dp"
+        android:src="@drawable/img_map"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tracking Number"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16dp"
+        android:textColor="@color/text_color_light"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/img_for_tracking"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R-7458-4567-4434-5854"
+            android:textSize="16dp"
+            android:textColor="@color/primary_color_blue"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_view_package_info"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_primary"
+        android:fontFamily="sans-serif"
+        android:text="View Package Info"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:elevation="10dp"
+        android:layout_marginTop="25dp">
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/button_home"
+            android:layout_marginStart="25dp"/>
+        <ImageView
+            android:id="@+id/button_wallet"
+            android:layout_width="33dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/button_wallet"
+            android:layout_marginStart="60dp"/>
+        <ImageView
+            android:id="@+id/button_track"
+            android:layout_width="33dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/button_track_checked"
+            android:layout_marginStart="60dp"/>
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/button_profile"
+            android:layout_marginStart="60dp"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
