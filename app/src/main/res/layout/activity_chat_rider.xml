@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatRiderActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/button_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="18dp" />
+        <ImageView
+            android:layout_width="148dp"
+            android:layout_height="43dp"
+            android:src="@drawable/icon_rider"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="60dp"/>
+        <ImageView
+            android:id="@+id/button_call"
+            android:layout_width="14dp"
+            android:layout_height="18dp"
+            android:src="@drawable/button_call"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="60dp"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="600dp"
+            android:layout_marginStart="18dp">
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:src="@drawable/button_emoji"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:layout_width="267dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/edittext_search_home"
+                android:hint="Enter message"
+                android:paddingStart="20dp"
+                android:fontFamily="sans-serif"
+                android:textSize="14dp"
+                android:textColor="@color/dark_grey"
+                android:layout_gravity="center_vertical"/>
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:src="@drawable/button_send_message"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

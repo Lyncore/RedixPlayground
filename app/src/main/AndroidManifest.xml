@@ -13,6 +13,19 @@
         android:theme="@style/Theme.Prof_project"
         tools:targetApi="31">
         <activity
+            android:name=".CallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatRiderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home" />
+        <activity
             android:name=".TrackActivity"
             android:exported="false" />
         <activity
@@ -38,10 +51,6 @@
         <activity
             android:name=".ForgotRasswordActivity"
             android:exported="false" />
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false"
-            android:label="@string/title_activity_home" />
         <activity
             android:name=".LogInActivity"
             android:exported="false" />

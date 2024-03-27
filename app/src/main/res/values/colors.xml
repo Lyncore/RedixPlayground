@@ -8,4 +8,5 @@
     <color name="text_color_dark">#141414</color>
     <color name="light_grey">#CFCFCF</color>
     <color name="dark_grey">#A7A7A7</color>
+    <color name="grey_background">#F2F2F2</color>
 </resources>

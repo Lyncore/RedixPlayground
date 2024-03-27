@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="29dp">
+
+    <EditText
+        android:layout_width="321dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_search_home"
+        android:fontFamily="sans-serif"
+        android:hint="Search services"
+        android:textSize="12dp"
+        android:gravity="center_vertical"
+        android:paddingStart="9dp"/>
+
+    <ImageView
+        android:layout_width="327dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/img_hello_home" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Special for you"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/secondary_color_orange"
+        android:layout_gravity="center_vertical"/>
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/button_add_home"
+            android:layout_marginStart="210dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="7dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="166dp"
+            android:layout_height="64dp"
+            android:src="@drawable/advertisement1"/>
+            <ImageView
+                android:layout_width="166dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/advertisement2"/>
+            <ImageView
+                android:layout_width="166dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/advertisement1"/>
+            <ImageView
+                android:layout_width="166dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/advertisement2"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What would you like to do"
+        android:textColor="@color/primary_color_blue"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="14dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+<ImageButton
+    android:layout_width="159dp"
+    android:layout_height="159dp"
+    android:layout_marginStart="20dp"
+    android:background="@drawable/button_home_customer"/>
+        <ImageButton
+            android:layout_width="159dp"
+            android:layout_height="159dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/send_package_white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <ImageButton
+            android:layout_width="159dp"
+            android:layout_height="159dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/button_home_fund_wallet"/>
+        <ImageButton
+            android:id="@+id/button_chats"
+            android:layout_width="159dp"
+            android:layout_height="159dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/button_home_chats"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="10dp"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="25dp"
+            android:src="@drawable/button_home_pressed" />
+
+        <ImageView
+            android:id="@+id/button_wallet"
+            android:layout_width="33dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="60dp"
+            android:src="@drawable/button_wallet" />
+
+        <ImageView
+            android:id="@+id/button_track"
+            android:layout_width="33dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="60dp"
+            android:src="@drawable/button_track" />
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="60dp"
+            android:src="@drawable/button_profile" />
+    </LinearLayout>
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
