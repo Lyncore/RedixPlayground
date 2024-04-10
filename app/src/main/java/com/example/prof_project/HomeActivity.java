@@ -1,6 +1,10 @@
 package com.example.prof_project;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.NavigationUI;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -10,46 +14,27 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+import com.example.prof_project.databinding.ActivityHomeBinding;
+import com.example.prof_project.utils.BaseActivity;
+
 //Класс для реализации экрана Home
 //Дата создания 27.03.2024
 //Автор Александрова Дарина
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends BaseActivity<ActivityHomeBinding> {
 
+    NavController navController;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ImageButton button_chats = findViewById(R.id.button_chats);
-        ImageView button_wallet = findViewById(R.id.button_wallet);
-        ImageView button_track = findViewById(R.id.button_track);
-        //Обработка нажатия на кнопку чатов, переход на вкладку Чаты
-        button_chats.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ChatsActivity.class);
-                startActivity(intent);
-            }
-        });
 
-        //Обработка нажатия на иконку кошелька в нижнем меню, переход на вкладку Wallet
-        button_wallet.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), WalletActivity.class);
-                finish();
-                startActivity(intent);
-            }
-        });
+        navController = Navigation.findNavController(this, R.id.main_nav_host);
+        navController.setGraph(R.navigation.mobile_navigation);
 
-        //Обработка нажатия на иконку машинкы в нижнем меню, переход на вкладку Track
-        button_track.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), TrackActivity.class);
-                finish();
-                startActivity(intent);
-            }
-        });
+        NavigationUI.setupWithNavController(binding.mainNav, navController);
+    }
 
+    @Override
+    protected ActivityHomeBinding binding() {
+        return ActivityHomeBinding.inflate(this.getLayoutInflater());
     }
 }

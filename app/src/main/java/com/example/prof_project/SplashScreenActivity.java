@@ -3,6 +3,7 @@ package com.example.prof_project;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -18,7 +19,13 @@ public class SplashScreenActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashScreenActivity.this, FirstScreenActivity.class));
+                SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+
+                if(!prefs.getBoolean("completed", false)) {
+                    startActivity(new Intent(SplashScreenActivity.this, FirstScreenActivity.class));
+                } else {
+                    startActivity(new Intent(SplashScreenActivity.this, ThirdScreenActivity.class));
+                }
             }
         }, 2000);
     }
